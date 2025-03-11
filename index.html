@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modge Design: Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/mdweblogo2.png" alt="Your Logo">
+    </div>
+    <div class="header-content">
+      <h1>Modge Design</h1>
+      <p>by Joemari D. Roberto</p>
+      <p>Graphic Designer | Visual Storyteller | Graphic Artist</p>
+      <br>
+      <button onclick="openAboutModal()">About Me</button>
+    </div>
+  </header>
+      <!-- Navbar -->
+      <nav>
+        <div class="nav-container">
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+          </div>
+          <ul class="nav-links">
+            <li><a href="#PersonalBrand">Personal Brand</a></li>
+            <li><a href="#branding">Branding</a></li>
+            <li><a href="#posters">Promotional Designs</a></li>
+            <li><a href="#creative designs">Creative Designs</a></li>
+            <!--<li>
+              <a href="#more">More</a>
+              <ul class="dropdown">
+                <li><a href="https://www.youtube.com/@jomroberto9965" target="_blank">Content Creation</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#awards">Awards</a></li>
+              </ul>
+            </li>-->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  <!-- Rest of your content (sections, modals, etc.) -->
+
+  <!-- Personal Brand Section -->
+  <section id="PersonalBrand" class="category">
+    <h2>Personal Brand</h2>
+    <div class="gallery">
+      <div class="thumbnail" onclick="openModal('design1-modal')">
+        <img src="images/md3.png" alt="Design 1">
+        <div class="overlay">
+          <p>Modge Design</p>
+        </div>
+      </div>
+      <div class="thumbnail" onclick="openModal('design2-modal')">
+        <img src="images/md2.png" alt="Design 2">
+        <div class="overlay">
+          <p>Modge Design</p>
+        </div>
+      </div>
+      <!-- Add more thumbnails as needed -->
+    </div>
+  </section>
+
+  <!-- Branding Section -->
+  <section id="branding" class="category">
+    <h2>Branding</h2>
+    <div class="gallery">
+      <div class="thumbnail" onclick="openModal('branding1-modal')">
+        <img src="images/mnthumbnail@4x.png" alt="Branding 1">
+        <div class="overlay">
+          <p>Mahihinang Nilalang Discord Server</p>
+        </div>
+      </div>
+      <div class="thumbnail" onclick="openModal('branding2-modal')">
+        <img src="images/ivet.png" alt="Branding 2">
+        <div class="overlay">
+          <p>i-Vet</p>
+        </div>
+      </div>
+    <div class="thumbnail" onclick="openModal('branding3-modal')">
+      <img src="images/pastriefy2.png" alt="Branding 3">
+      <div class="overlay">
+        <p>Pastriefy</p>
+      </div>
+    </div>
+    <div class="thumbnail" onclick="openModal('branding4-modal')">
+      <img src="images/herbline@4x.png" alt="Branding 4">
+      <div class="overlay">
+        <p>Herb Line: Turmeric Capsule</p>
+      </div>
+    </div>
+    <!-- Add more thumbnails as needed -->
+  </div>
+  </section>
+
+  <!-- Posters Section -->
+  <section id="posters" class="category">
+    <h2>Promotional Designs</h2>
+    <div class="gallery">
+      <div class="thumbnail" onclick="openModal('poster1-modal')">
+        <img src="images/yawak flyer.jpg" alt="Poster 1">
+        <div class="overlay">
+          <p>Flyer</p>
+        </div>
+      </div>
+      <div class="thumbnail" onclick="openModal('poster2-modal')">
+        <img src="images/voteforash.jpg" alt="Poster 2">
+        <div class="overlay">
+          <p>Poster</p>
+        </div>
+      </div>
+      <div class="thumbnail" onclick="openModal('poster3-modal')">
+        <img src="images/cringklesthumnail.jpg" alt="Poster 2">
+        <div class="overlay">
+          <p>Social Media Post</p>
+        </div>
+      </div>
+      <!-- Add more thumbnails as needed -->
+    </div>
+  </section>
+
+  <!-- Creative Design -->
+  <section id="creative designs" class="category">
+    <h2>Creative Design</h2>
+    <div class="gallery">
+      <div class="thumbnail" onclick="openModal('creative design1-modal')">
+        <img src="images/curry poster.jpg" alt="Poster 1">
+        <div class="overlay">
+          <p>Steph Curry Creative Poster</p>
+        </div>
+      </div>
+      <div class="thumbnail" onclick="openModal('creative design2-modal')">
+        <img src="images/sadnesskills.jpg" alt="Poster 2">
+        <div class="overlay">
+          <p>SADNESS KILLS</p>
+        </div>
+      </div>
+      <!-- Add more thumbnails as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-content">
+    <h2>Contact Me</h2>
+    <p>Let's create something amazing together!</p>
+    <div class="social-links">
+      <a href="mailto:jomdianoroberto@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/jomroberto/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <!--<a href="https://behance.net/your-profile" target="_blank"><i class="fab fa-behance"></i></a>-->
+      <a href="https://www.instagram.com/jomroberto_/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/jomdianoroberto" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</section>
+  <!-- Modals for Project Details -->
+  <!-- Design 1 Modal -->
+  <div id="design1-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('design1-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Modge Design</h2>
+        <img src="images/md3.png" alt="Design 1">
+        <h2>Mockup</h2>
+        <img src="images/modge design mockup.jpg" alt="Design 1">
+        <p>Tools used: Adobe Photoshop, Illustrator.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Design 2 Modal -->
+  <div id="design2-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('design2-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Modge Design</h2>
+        <img src="images/md2.png" alt="Design 2">
+        <h2>Mockup</h2>
+        <img src="images/modge design mockup.jpg" alt="Design 1">
+        <p>Tools used: Adobe Photoshop, Illustrator.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branding 1 Modal -->
+  <div id="branding1-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('branding1-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Mahihinang Nilalang Discord Server</h2>
+        <p><b>Mahihinang Nilalang is a Discord community where gamers come together to connect, compete, and make lasting friendships. Built on camaraderie and a love for gaming, we’re a space for everyone from casual players to hardcore fans to find teammates and friends in a supportive, fun environment."</b></p>
+        <h2>Logo</h2>
+        <img src="images/mnthumbnail@4x.png" alt="Branding 1">
+        <h2>Other Logo</h2>
+        <img src="images/mn2.png" alt="Branding 2">
+        <h2>Color Pallete</h2>
+        <img src="images/mncolor@4x.png" alt="Branding 2">
+        <h2>Mockup</h2>
+        <img src="images/mn-front-back-tshirtmockup.png" alt="Branding 1">
+        <p>Tools used: Adobe Illustrator, Photoshop.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branding 2 Modal -->
+  <div id="branding2-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('branding2-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>i-Vet</h2>
+        <p><b>i-Vet was created to streamline veterinary care across the Municipality of Orani. This centralized web system simplifies clinic operations from appointment scheduling to patient records allowing vets to focus more on caring for animals. With i-Vet, clinics can offer faster, more organized service, strengthening the connection between pet owners and the care their animals deserve.</b></p>
+        <h2>Logo</h2>
+        <img src="images/ivet.png" alt="Branding 2">
+        <h2>Color Pallete</h2>
+        <img src="images/ivetcolor@4x.png" alt="Branding 2">
+        <h2>Other Logos</h2>
+        <img src="images/ivetotherlogo@4x.png" alt="Branding 2">
+        <p>Tools used: Figma, Adobe XD.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branding 3 Modal -->
+  <div id="branding3-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('branding3-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Pastriefy</h2>
+        <p><b>Pastriefy is an online bakery dedicated to bringing the warmth of homemade baking to every doorstep. Rooted in tradition and crafted with care, Pastriefy embodies quality, creativity, and a passion for the art of baking. With a focus on authenticity and comfort, the brand delivers a delightful experience that feels just like home.</b></p>
+        <h2>Logo</h2>
+        <img src="images/pastriefy.png" alt="Branding 3">
+        <h2>Other Logos</h2>
+        <img src="images/pastriefy2.png" alt="Branding 3">
+        <h2>Color Pallete</h2>
+        <img src="images/pastriefycolor.png" alt="Branding 3">
+        <h2>Mockup</h2>
+        <img src="images/pastriefymockup.jpg" alt="Branding 3">
+        <p>Tools used: Adobe Illustrator.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branding 4 Modal -->
+  <div id="branding4-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('branding4-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Herb Line: Turmeric Capsule</h2>
+        <p><b>Herb Line’s Turmeric Capsule is crafted to support a healthier lifestyle through the power of nature. Rooted in traditional wellness practices, our formula harnesses the benefits of turmeric to promote overall well-being. With a commitment to purity and quality, Herb Line delivers natural solutions for modern living, making wellness simple, effective, and accessible.</b></p>
+        <h2>Logo</h2>
+        <img src="images/herbline@4x.png" alt="Branding 4">
+        <h2>Color Pallete</h2>
+        <img src="images/herblinecolor@4x.png" alt="Branding 4">
+        <h2>Mockup</h2>
+        <img src="images/herblinepackaging.jpg" alt="Branding 4">
+        <img src="images/booth store ss2.jpg" alt="Branding 4">
+        <p>Tools used: Adobe Illustrator, SketchUp.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Poster 1 Modal -->
+  <div id="poster1-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('poster1-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Yawak LPG Trading Flyer</h2>
+        <img src="images/yawak flyer.jpg" alt="Poster 1">
+        <p>Tools used: Adobe Photoshop</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Poster 2 Modal -->
+  <div id="poster2-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('poster2-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Poster</h2>
+        <img src="images/voteforash.jpg" alt="Poster 2">
+        <p>Tools used: Adobe Photoshop</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Poster 3 Modal -->
+   <div id="poster3-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('poster3-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Social Media Post</h2>
+        <img src="images/cringkles.jpg" alt="Poster 3">
+        <p>Tools used: Adobe Photoshop</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Creative Design 1 -->
+  <div id="creative design1-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('creative design1-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>Steph Curry Creative Poster</h2>
+        <img src="images/curry poster.jpg" alt="Creative Design 1">
+        <p>Tools used: Adobe Photoshop</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Creative Design 2 -->
+ <div id="creative design2-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('creative design2-modal')">&times;</span>
+      <div class="scrollable-content">
+        <h2>SADNESS KILLS</h2>
+        <img src="images/sadnesskills.jpg" alt="Creative Design 2">
+        <p>Tools used: Adobe Photoshop</p>
+      </div>
+    </div>
+  </div> 
+
+  <!-- About Me Modal -->
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeAboutModal()">&times;</span>
+      <div class="scrollable-content">
+        <div class="about-content">
+          <div class="profile-pic">
+          </div>
+          <h2>About Me</h2>
+          <img src="images/Roberto, Joemari edited crop.jpg" alt="Your Name">
+          <h3>Hi! Im Joemari D. Roberto</h3>
+          <p>A recent graduate with a Bachelor of Science in Information Technology, and I’m excited to dive into the world of graphic design. With a strong foundation in design software like Adobe Illustrator and Photoshop, I’m passionate about bringing ideas to life through branding, logo creation, and visual storytelling. My goal is to blend creativity with technical skills to design engaging and memorable visuals. I’m always eager to learn, adapt, and grow in the fast-evolving field of design. Looking forward to creating impactful work and connecting with others in the creative industry!"</p>
+          <p>Here’s some more information about me:</p>
+          <ul>
+            <li>Proficient in Adobe Creative Suite, Figma, and Canva.</li>
+            <li>Passionate about minimalism and modern design trends.</li>
+          </ul>
+          <p>Feel free to reach out if you'd like to collaborate or just say hi!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
