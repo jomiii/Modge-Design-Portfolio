@@ -8,6 +8,67 @@ body {
   line-height: 1.6;
 }
 
+/* About Me Section */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url(images/);
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content img {
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/*contact*/
+.contact-info {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px; /* Adjust as needed */
+  margin: 20px auto; /* Center the container */
+  font-family: 'Arial', sans-serif; /* Ensure consistent font */
+}
+
+.contact-info p {
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Default text color */
+}
+
+.contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  margin-bottom: 10px; /* Space between items */
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-info .contact-item i {
+  color: #007bff; /* Blue color for icons */
+  font-size: 1.2rem;
+}
+
+.contact-info .contact-item i:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+
 /* Header Styles */
 header {
   background-image: url('images/bg1.jpg'); /* Add background image */
